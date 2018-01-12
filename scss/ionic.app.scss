@@ -1,0 +1,770 @@
+/*
+To customize the look and feel of Ionic, you can override the variables
+in ionic's _variables.scss file.
+
+For example, you might change some of the default colors:
+
+
+*/
+
+$light: #fff !default;
+$stable: #f8f8f8 !default;
+$positive: #387ef5 !default;
+$calm: #11c1f3 !default;
+$balanced: #33cd5f !default;
+$energized: #ffc900 !default;
+$assertive: #ef473a !default;
+$royal: #886aea !default;
+$dark: #444 !default;
+// The path for our ionicons font files, relative to the built CSS in www/css
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+// Include all of Ionic
+@import "www/lib/ionic/scss/ionic";
+.bar {
+  height: 54px;
+  background-color: white!important;
+  border-bottom: 1px solid #e8e8e8!important;
+  .title {
+    line-height: 52px!important;
+    text-align: left;
+    font-size: 24px;
+  }
+}
+
+.rel {
+  position: relative;
+}
+
+.hambug-icon {
+  color: #091b27!important;
+  font-size: 24px!important;
+  padding: 0 0 0 12px !important;
+  display: block!important;
+}
+
+.nav-height .bar.bar-stable .title {
+  line-height: 52px!important;
+  font-size: 22px!important;
+  font-weight: 600;
+}
+
+.nav-height {
+  height: 52px;
+  box-shadow: 0 2px 0 0 lightgrey;
+  .bar.bar-stable .title {
+    font-size: 20px;
+    line-height: 48px;
+    left: 40px!important;
+    text-align: left!important;
+    padding-top: 1px !important;
+  }
+  .bar.bar-stable {
+    background: white!important;
+  }
+}
+
+.bar .title+.buttons {
+  position: absolute!important;
+  top: 5px!important;
+  right: 15px!important;
+  bottom: 5px!important;
+}
+
+.header-refresh {
+  color: #091b27 !important;
+  font-size: 32px !important;
+  padding: 0 12px 0 0 !important;
+  display: block;
+}
+
+.back-button {
+  display: none!important;
+}
+
+.has-header {
+  top: 54px!important;
+}
+
+.center-header {
+  display: block;
+  text-align: center!important;
+}
+
+.display-none {
+  display: none;
+}
+
+//menu.html start
+.menu-header {
+  .menu .bar-header {
+    height: 200px;
+    background: white!important;
+  }
+  .bar-stable {
+    height: 200px!important;
+    background: white!important;
+  }
+  .hasmenuhead {
+    top: 200px!important;
+  }
+}
+
+.menu-displaypic {
+  width: 72px;
+  position: absolute;
+  top: 28%;
+  left: 8%;
+  height: auto;
+}
+
+.menu-displayimg {
+  height: auto;
+  width: 72px;
+}
+
+.menu-displayName {
+  position: absolute;
+  bottom: 25%;
+  left: 8%;
+  color: #091b27;
+  font-size: 18px;
+  font-weight: 600;
+  right: 8%;
+}
+
+.menu-phn {
+  position: absolute;
+  bottom: 13%;
+  left: 8%;
+  font-size: 16px;
+  font-weight: 500;
+  color: #6b767d;
+}
+
+.menu-bgcolor {
+  background: #f2f4f5;
+}
+
+.menu-div {
+  padding: 18px 0 0 25px;
+  color: #454545;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.menu-dash {
+  padding: 18px 0 0 25px;
+  color: black;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.menu-helpdiv {
+  padding: 0 0 0 25px;
+  color: #454545;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.menu-label {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.menu-hr {
+  margin: 20px;
+  color: #a1a8ad;
+}
+
+//menu.html end
+//login.html start
+.bar-otp {
+  background-color: black!important;
+  color: white!important;
+  text-align: center;
+  .title {
+    text-align: center!important;
+  }
+}
+
+.otp-div {
+  top: 40%;
+  left: 40%;
+  transform: translate(-35%, -40%);
+  position: absolute;
+  width: 70%;
+}
+
+.delivery-login {
+  text-align: center;
+  img {
+    height: 24px;
+    width: 24px;
+  }
+  label {
+    font-size: 24px;
+    margin: 0 10px;
+  }
+}
+
+.otp-input {
+  background: #e8e8e8;
+  text-align: center;
+  height: 50px;
+  padding: 8px;
+  margin: 20px auto;
+  display: block;
+  border-radius: 5px;
+  label {
+    display: inline-block;
+    vertical-align: middle;
+    width: 18%;
+    font-size: 24px;
+    color: grey;
+  }
+  .ver-line {
+    width: 1px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    background: grey;
+  }
+  input {
+    background: transparent;
+    display: inline-block;
+    vertical-align: middle;
+    width: 62%;
+    font-size: 24px;
+    padding: 8px;
+  }
+  i {
+    display: inline-block;
+    vertical-align: middle;
+    width: 14%;
+    font-size: 24px;
+  }
+}
+
+.login-pane {
+  transform: translate(0%, 25%)!important;
+}
+
+.login-div {
+  margin: 0 10%;
+}
+
+.login-text {
+  color: #223c4d;
+}
+
+.login-form {
+  .item-input {
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 5px 0;
+    margin: 20px 0;
+    input {
+      font-size: 24px;
+    }
+  }
+}
+
+.login-button {
+  background-color: #f6f6f6!important;
+  color: #223c4d!important;
+  font-size: 24px;
+  min-height: 50px;
+  margin: 15% 0 10%!important;
+}
+
+.login-label {
+  text-align: center;
+  display: block;
+  font-size: 16px;
+  color: #223c4d;
+}
+
+.toggle-app {
+  position: absolute;
+  background: #e8e8e8;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 10px;
+  top: 20px;
+  right: 20px;
+}
+
+.resendBtn {
+  display: block;
+  line-height: 30px;
+  min-height: 17px;
+  font-size: 15px !important;
+  border: transparent;
+  border-radius: 0 !important;
+  background: transparent !important;
+  color: black !important;
+  margin: 0 auto;
+}
+
+.removedpopup {
+  h3 {
+    img {
+      max-width: 35px;
+      max-height: 35px;
+    }
+  }
+  .popup {
+    border-radius: 5px;
+  }
+  .popup-body {
+    background: white;
+    color: #223c4d;
+    text-align: center;
+    font-weight: 600;
+    padding-bottom: 30px;
+    font-size: 14px;
+    h4 {
+      margin: 0;
+      font-size: 20px;
+      color: #223c4d;
+      font-weight: 600;
+    }
+    label {
+      font-size: 12px;
+    }
+  }
+  .popup-head {
+    padding-top: 30px;
+    padding-bottom: 0;
+    border-bottom: none!important;
+    text-align: center;
+    background: white;
+    border-radius: 5px;
+  }
+  .popup-buttons {
+    padding: 0;
+    min-height: 40px;
+    border: none;
+    button {
+      background-color: #e8e8e8;
+      border: none;
+      color: black;
+      font-size: 20px;
+      font-weight: 600;
+      min-height: 35px;
+    }
+  }
+}
+
+//login.html end
+//task.html start
+.disabled-task {
+  opacity: 0.5;
+}
+
+.notAvail {
+  color: #223c4d;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.task-list {
+  .item {
+    padding: 0!important;
+    background: #f6f6f6;
+    position: relative;
+    .index-div {
+      width: 10%;
+      display: inline-block;
+      vertical-align: middle;
+      padding: 4%;
+      font-weight: 600;
+      font-size: 24px;
+    }
+    .details-div {
+      width: 90%;
+      padding: 10% 10px;
+      background: white;
+      display: inline-block;
+      vertical-align: middle;
+      position: relative;
+      .name {
+        font-size: 18px;
+        line-height: 24px;
+      }
+      .delivery-details {
+        font-size: 16px;
+        line-height: 24px;
+      }
+      i {
+        position: absolute;
+        right: 10%;
+        top: 40%;
+        font-size: 22px;
+      }
+    }
+  }
+  .overlay-task {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(146, 146, 146, 0.13)
+  }
+}
+
+//task.html end
+//deliveryComplete.html start
+.success-div {
+  top: 50%;
+  transform: translate(0%, -50%);
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  padding: 10%;
+  span {
+    font-size: 26px;
+    font-weight: 600;
+  }
+}
+
+.tick-div {
+  background: black;
+  color: white;
+  padding: 10%;
+  margin: 10%;
+  border-radius: 50%;
+  font-size: 5em;
+  ;
+}
+
+.goto-btn {
+  color: black!important;
+  background-color: #f6f6f6 !important;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+//deliveryComplete.html end
+//deliveryboyTask.html start
+.customer-details {
+  width: 88%;
+  display: inline-block;
+  vertical-align: middle;
+  h3 {
+    font-weight: 600;
+  }
+  p {
+    color: grey;
+    padding-right: 10%;
+  }
+}
+
+.map-btns {
+  width: 10%;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  i {
+    background: #f6f6f6;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    font-size: 20px;
+    padding: 8px;
+    margin: 10px auto;
+  }
+}
+
+.customer-div {
+  border-bottom: 1px solid #e8e8e8;
+  padding: 5%;
+}
+
+.payment {
+  border-bottom: 1px solid #e8e8e8;
+  padding: 5%;
+}
+
+.collect {
+  width: 88%;
+  display: inline-block;
+  vertical-align: middle;
+  label {
+    display: block;
+    font-size: 20px;
+    margin: 5px 0;
+  }
+  span {
+    font-size: 24px;
+    font-weight: 600;
+  }
+}
+
+.check-icon {
+  height: 35px;
+  width: 35px;
+  width: 10%;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 3em;
+}
+
+.return-div {
+  padding: 5%;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.return-product {
+  width: 60%;
+  display: inline-block;
+  vertical-align: middle;
+  label {
+    display: block;
+    font-size: 20px;
+    margin: 5px 0;
+  }
+}
+
+.add-remove {
+  width: 38%;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: right;
+  i {
+    font-size: 2.5em;
+    margin: 2px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  span {
+    font-size: 2em;
+    margin: 2px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    font-weight: 600;
+  }
+}
+
+.btm-btn {
+  padding: 0!important;
+  .row {
+    padding: 0!important;
+    border-top: 1px solid #e8e8e8;
+    .col-50 {
+      .button {
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        font-weight: 600!important;
+        font-size: 20px!important;
+      }
+    }
+    .col {
+      .button {
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        font-weight: 600!important;
+        font-size: 20px!important;
+      }
+    }
+  }
+}
+
+.fail {
+  color: #FF010C!important;
+  border-right: 1px solid #e8e8e8;
+}
+
+.complete {
+  color: #39BC0C!important;
+}
+
+.completePopup {
+  .popup {
+    width: 80%;
+    border-radius: 5px;
+    .popup-head {
+      display: none;
+    }
+    .popup-body {
+      padding: 15% 10%;
+      text-align: center;
+      background: white;
+      span {
+        color: #223c4d;
+        font-size: 2em;
+        font-weight: 600;
+      }
+    }
+    .popup-buttons {
+      padding: 0;
+      .button {
+        background: #e8e8e8;
+        margin: 0;
+        color: black;
+        font-weight: 600;
+        font-size: 24px;
+      }
+      button:first-child {
+        border-bottom-left-radius: 5px;
+        border-right: 1px solid grey;
+      }
+      button:last-child {
+        border-bottom-right-radius: 5px;
+      }
+    }
+  }
+}
+
+.reason-title {
+  font-size: 26px;
+  text-align: left;
+  font-weight: 600;
+  margin: 20px 0;
+}
+
+.reasons-list {
+  span {
+    display: block;
+    text-align: left;
+    margin: 5px 0;
+    i {
+      font-size: 22px;
+    }
+    label {
+      font-size: 22px;
+      color: grey;
+      margin: 0 5px;
+    }
+  }
+}
+
+.reason-div {
+  padding: 10%;
+}
+
+.failPopup {
+  .popup {
+    width: 90%;
+    border-radius: 5px;
+    background: white;
+    .popup-head {
+      display: none;
+    }
+    .popup-body {
+      padding: 0;
+    }
+  }
+}
+
+.reason-btn {
+  display: block;
+  width: 100%;
+  background: #e8e8e8;
+  padding: 0;
+  border: none;
+  min-height: 47px;
+  font-weight: 600;
+  font-size: 20px;
+  border-radius: 0 0 5px 5px;
+}
+
+.close-div {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  i {
+    font-size: 2em;
+    color: grey;
+  }
+}
+
+//deliveryboyTask.html end
+.location-div {
+  font-size: 20px;
+  padding: 5%;
+  color: #223c4d;
+  p {
+    margin-bottom: 10%;
+  }
+}
+
+.bg-white {
+  background: transparent!important;
+}
+
+.deliver-bis {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.cust-name {
+  font-size: 20px;
+  font-weight: 500!important;
+  margin: 0!important;
+}
+
+.driver-div {
+  border-bottom: 1px solid #e8e8e8;
+  padding: 10% 5%;
+}
+
+.pickup-div {
+  padding: 5%;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.pickup-product {
+  width: 50%;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  position: relative;
+  img {
+    height: 65px;
+    width: 75px;
+  }
+  i {
+    position: absolute;
+    top: 8%;
+    margin: 10px;
+    font-size: 32px;
+  }
+  label {
+    display: block;
+    font-size: 20px;
+    margin: 5px 0;
+  }
+}
+
+.add-pickup {
+  width: 48%;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  i {
+    font-size: 3em;
+    margin: 2px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  span {
+    font-size: 3em;
+    margin: 2px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    font-weight: 600;
+  }
+  label {
+    display: block;
+    margin-top: 15px;
+  }
+}
